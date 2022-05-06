@@ -5,27 +5,55 @@ The purpose of this project was to analyze data from New York City’s Citi Bike
 
 ## Results
 
-All analysis for this project was performed using a [CSV file of August 2019 trip data](Resources/201908-citibike-tripdata.csv) downloaded from the [Citi Bike System Data website](https://ride.citibikenyc.com/system-data). The data was visualized with a [story created using Tableau Public](https://public.tableau.com/app/profile/jennifer.amis/viz/NYCCitiBikeDataAnalysis_16517989986100/NYCCitiBikeDataAnalysis). A discussion of each data visualization is below.
+All analysis for this project was performed using a CSV file of August 2019 trip data downloaded from the [Citi Bike System Data website](https://ride.citibikenyc.com/system-data). The data was visualized with a [story created using Tableau Public](https://public.tableau.com/app/profile/jennifer.amis/viz/NYCCitiBikeDataAnalysis_16517989986100/NYCCitiBikeDataAnalysis). A discussion of each data visualization is below.
 
 ### Trips by Gender and User Type
+
+![img1](Resources/Trips_Gender_UserType.png)
+
+
 A total of 2,344,224 trips were taken in August 2019 using the Citi Bike bicycles. This visualization helps us to understand the users who took those trips. With respect to gender, the largest proportion of trips (65%, or 1,530,272) were taken by users who identified as male, with 25% (588,431) by users who identified as female, and 10% (225,521) by users who had unknown gender. With respect to user type, the majority of trips (81%, or 1,900,359) were taken by “subscribers” who had an annual membership, with only 19% (443,865) of trips taken by “customers” with a 24-hour or 3-day pass.
 
 ### Trip Duration for All Users
+
+![img2](Resources/Trip_Duration_All_Users.png)
+
+
 This visualization shows us the count of all Citi Bike trips by duration, reported in minutes and hours. We can see that the majority of trips were shorter than one hour, with the largest count for trips that were only five minutes long (the peak on the graph). 
 
 ### Trip Duration by Gender
+
+![img3](Resources/Trip_Duration_Gender.png)
+
+
 This visualization shows the same data as the previous one (count of Citi Bike trips by duration), broken down by gender. Consistent with the previous visualization, the majority of trips for each gender were shorter than one hour. The largest count of trips for male users was five minutes long and for female users it was six minutes long. Trip duration did not have as pronounced of a peak for users with unknown gender, but had the largest numbers of trips between approximately seven and 25 minutes long. 
 
 ### Trips by Weekday and Hour of Start Time
+
+![img4](Resources/Trips_Weekday_Hour.png)
+
+
 This visualization uses a heatmap to show us the volume of trips started for each hour of each day of the week. We can see that during the week (Monday – Friday), the most popular times to start a trip were in the morning between 8 – 9 AM and in the evening between 5 – 7 PM, aligning with typical workday commuting hours. The number of trips started during peak evening hours was greater than for morning. Interestingly, the number of afternoon and evening trips for Wednesday was lower than for other weekdays, and the number of trips during peak times for Thursday was higher than other weekdays. For the weekend days, the most popular times to start a trip were more evenly distributed from late morning through early evening. This is also as expected for more recreational weekend use.
 
 ### Trips by Gender, Weekday and Hour of Start Time
+
+![img5](Resources/Trips_Gender_Weekday_Hour.png)
+
+
 This visualization shows the same data as the previous one (trips started for each hour of each day of the week), broken down by gender. Since male users account for the largest proportion of trips, their data most closely resembles the previous heatmap. For female users, peak days and times also align with what we observed from the previous map. However, we see that users with unknown gender started more trips during peak weekend hours than during the work week. This suggests that users for whom gender information is unknown may have been more recreational users of the Citi Bike program rather than commuters.
 
 ### Trips by Gender, Weekday and User Type
+
+![img6](Resources/Trips_Gender_Weekday_UserType.png)
+
+
 This visualization shows the volume of trips started for each day of the week, broken down by gender and user type. As we saw earlier, subscribers account for a much higher volume of trips than customers. Overall, we see that subscribers had more trips during the week, while customers had more trips during the weekend. The distribution of trip volume between female and male users aligns with previous visualizations. The trip volume for users with unknown gender was greater on the weekends than during the week, and among customers than subscribers, consistent with the idea that users for whom gender data is unknown were more occasional, recreational users than regular commuters who subscribed for the program.
 
 ### Starting Location Popularity
+
+![img7](Resources/Starting_Location.png)
+
+
 This visualization shows the number of trips started from the various Citi Bike stations across New York City. The larger and darker the circle is, the more popular the station as a starting point for trips. We can see the most popular stations located in Manhattan, mostly below Central Park, in a part of the city busy with commuters and popular with tourists. 
 
 ## Summary
