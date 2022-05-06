@@ -132,4 +132,7 @@ dmypy.json
 .env
 config.py
 config*
-.csv
+
+# Raw data
+201908-citibike-tripdata-original.csv
+201908-citibike-tripdata.csv
